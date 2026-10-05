@@ -1,6 +1,8 @@
 package com.hollowsong.item;
 
 import com.hollowsong.Hollowsong;
+import com.hollowsong.item.custom.TuningForkItem;
+
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -16,7 +18,7 @@ public class ModItems {
             new Item(new Item.Settings().registryKey(itemKey("ringstone"))));
 
     public static final Item TUNING_FORK = registerItem("tuning_fork",
-            new Item(new Item.Settings().maxCount(1).registryKey(itemKey("tuning_fork"))));
+            new TuningForkItem(new Item.Settings().maxCount(1).registryKey(itemKey("tuning_fork"))));
 
     // 1.21.2+ requirement: every item needs its registry key in Settings BEFORE construction
     private static RegistryKey<Item> itemKey(String name) {
