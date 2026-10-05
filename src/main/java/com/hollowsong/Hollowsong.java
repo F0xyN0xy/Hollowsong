@@ -39,7 +39,7 @@ public class Hollowsong implements ModInitializer {
                     BlockState state = world.getBlockState(pos);
                     if (state.getBlock() instanceof RingstoneOreBlock) {
                         int r = state.get(RingstoneOreBlock.RESONANCE);
-                        if (r < 4 && world.getRandom().nextInt(5) == 0) {
+                        if (r < 4 && world.getRandom().nextInt(10) == 0) {
                             world.setBlockState(pos, state.with(RingstoneOreBlock.RESONANCE, r + 1));
                         }
                     }
