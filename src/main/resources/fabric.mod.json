@@ -1,0 +1,29 @@
+﻿{
+    "schemaVersion": 1,
+    "id": "hollowsong",
+    "version": "1.0.0",
+    "name": "Hollowsong",
+    "description": "A sound-resonance expansion mod for Minecraft",
+    "authors": ["F0xyN0xy"],
+    "license": "CC BY-NC-ND 4.0",
+    "icon": "assets/hollowsong/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": ["com.hollowsong.Hollowsong"],
+        "client": ["com.hollowsong.client.HollowsongClient"],
+        "fabric-datagen": ["com.hollowsong.client.HollowsongDataGenerator"]
+    },
+    "mixins": [
+        "hollowsong.mixins.json",
+        {
+            "config": "hollowsong.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.19.5",
+        "minecraft": "~1.21.11",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}
