@@ -33,7 +33,7 @@ public class ModBlocks {
 	}
 	
 	public static final Block RINGSTONE_ORE = registerBlock("ringstone_ore",
-		new ExperienceDroppingBlock(
+		new RingstoneOreBlock(
 			UniformIntProvider.create(2, 5),
 			AbstractBlock.Settings.create()
 					.registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Hollowsong.MOD_ID, "ringstone_ore")))
